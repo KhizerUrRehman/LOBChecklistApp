@@ -17,7 +17,6 @@ async function populateGamedays() {
             option.textContent = date;
             gamedaySelect.appendChild(option);
         }
-        loadChecklist();
     });
 }
 
