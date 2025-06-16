@@ -16,7 +16,15 @@ def generate_gamedays():
         today += datetime.timedelta(days=1)
     return gamedays
 
-GAMEDAYS = generate_gamedays()
+GAMEDAYS = [
+    "2025-06-20", "2025-06-21", "2025-06-22",
+    "2025-06-27", "2025-06-28", "2025-06-29",
+    "2025-07-04", "2025-07-05", "2025-07-06",
+    "2025-07-11", "2025-07-12", "2025-07-13",
+    "2025-07-18", "2025-07-19", "2025-07-20",
+    "2025-07-25", "2025-07-26", "2025-07-27"
+]
+
 TASKS = ["Cameras", "Stream", "Referees", "Table Team", "Scoreboard"]
 
 # Initialize DB
