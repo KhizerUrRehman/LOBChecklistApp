@@ -1,7 +1,7 @@
 const gamedaySelect = document.getElementById("gameday");
 const checklistEl = document.getElementById("checklist");
 
-const tasks = ["Referees", "Table team arrived", "Main Camera", "FT Cam", "3rd Camera", "All Cameras Set", "Internet ", "Walkies Charged", "Table Phone connected to display", "Mic placed", "Commentators ready", "Game 1 logos set", "Game 1 Phone teams set",  "Game 1 Stream ready to go", "Game 1 sheets prepped", "Game 2 logos set", "Game 2 Phone teams set", "Game 2 Stream ready to go", "Game 2 sheets prepped", "Game 3 logos set", "Game 3 Phone teams set", "Game 3 sheets prepped",  "Game 3 Stream ready to go", "Interviews done", "Packup done"]Add commentMore actions
+const tasks = ["Referees", "Table team arrived", "Main Camera", "FT Cam", "3rd Camera", "All Cameras Set", "Internet ", "Walkies Charged", "Table Phone connected to display", "Mic placed", "Commentators ready", "Game 1 logos set", "Game 1 Phone teams set",  "Game 1 Stream ready to go", "Game 1 sheets prepped", "Game 2 logos set", "Game 2 Phone teams set", "Game 2 Stream ready to go", "Game 2 sheets prepped", "Game 3 logos set", "Game 3 Phone teams set", "Game 3 sheets prepped",  "Game 3 Stream ready to go", "Interviews done", "Packup done"];
 
 
 async function populateGamedays() {
