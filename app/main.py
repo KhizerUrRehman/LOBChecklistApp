@@ -5,16 +5,8 @@ import datetime
 
 app = Flask(__name__)
 
-# Generate game days: all Fri, Sat, Sun from today till end of August
-def generate_gamedays():
-    today = datetime.date.today()
-    end = datetime.date(today.year, 8, 31)
-    gamedays = []
-    while today <= end:
-        if today.weekday() in [4, 5, 6]:  # Fri=4, Sat=5, Sun=6
-            gamedays.append(today.isoformat())
-        today += datetime.timedelta(days=1)
-    return gamedays
+#Generate game days: all Fri, Sat, Sun from today till end of August
+
 
 GAMEDAYS = [
     "2025-06-20", "2025-06-21", "2025-06-22",
@@ -25,7 +17,7 @@ GAMEDAYS = [
     "2025-07-25", "2025-07-26", "2025-07-27"
 ]
 
-TASKS = ["Cameras", "Stream", "Referees", "Table Team", "Scoreboard"]
+TASKS = ["Referees", "Table team arrived", "Main Camera", "FT Cam", "3rd Camera", "All Cameras Set", "Internet ", "Walkies Charged", "Table Phone connected to display", "Mic placed", "Commentators ready", "Game 1 logos set", "Game 1 Phone teams set",  "Game 1 Stream ready to go", "Game 1 sheets prepped", "Game 2 logos set", "Game 2 Phone teams set", "Game 2 Stream ready to go", "Game 2 sheets prepped", "Game 3 logos set", "Game 3 Phone teams set", "Game 3 sheets prepped",  "Game 3 Stream ready to go", "Interviews done", "Packup done"]
 
 # Initialize DB
 def init_db():
