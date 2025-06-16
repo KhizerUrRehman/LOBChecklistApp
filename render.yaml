@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: shared-checklist-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app/main.py"
+    envVars: []
